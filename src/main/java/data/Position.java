@@ -1,6 +1,5 @@
 package data;
 
-
 import enums.Direction;
 
 public class Position {

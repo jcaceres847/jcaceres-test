@@ -1,6 +1,5 @@
 package enums;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +13,9 @@ public enum Direction {
     private static final Map<String, Direction> BY_SHORT_NAME = new HashMap<>();
 
     static {
-        Arrays.stream(values()).forEach(v ->  BY_SHORT_NAME.put(v.shortName, v));
+        for (Direction direction : values()) {
+            BY_SHORT_NAME.put(direction.shortName, direction);
+        }
     }
 
     private int value;

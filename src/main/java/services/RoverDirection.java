@@ -1,6 +1,9 @@
 package services;
 
 import data.Position;
+import data.Rover;
+
+
 /**
  * Contains the services to change direction.
  */
@@ -8,9 +11,9 @@ public interface RoverDirection {
 
     /**
      * Change the direction to the Right depending of the actual direction.
-     * @param actualPosition the actual position
+     * @param position the actual position
      * @param directionStep the int value to redirect.
-     * @return the new position.
+     * @return the rover vehicle with its new position and status.
      */
-    Position change(Position actualPosition, int directionStep) throws Exception;
+    Rover change(Position position, int directionStep) ;
 }

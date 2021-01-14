@@ -11,6 +11,11 @@ During refactor I noticed that sizex and sizey was not used on the code so the c
 I applied in the new implementation several refactoring with SOLID principles generating several POJOS and
 Factory method to do the abstraction of the movements and changes of Rover and composition instead of
 inheritance. 
-Also was applied TDD generating the necessary test cases before creating the classes.
+Also was applied TDD generating the necessary test cases to coverage almost one hundred percent of the code.
 
 After that was applying the obstacles feature.
+
+## Add Bonus point
+The new feature obstacle was introduced. It was modified the receiver class RoverMoveImpl 
+and used the static factory method to initialize the necessary objects and RoverPosition to 
+check if rover has obstacles that prevent to move.
